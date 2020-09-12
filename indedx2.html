@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all {
+            border: 4px solid rgb(138, 132, 132);
+            font-family: sans-serif;
+        }
+
+        header {
+            background: purple;
+            padding: 20px;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+
+
+        }
+
+        .flex-box1 {
+            display: flex;
+            padding: 10px;
+            background: rgb(248, 244, 244);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .new-item {
+            background: rgb(6, 232, 248);
+            width: 250px;
+            height: 360px;
+            padding: 8px;
+        }
+
+        .item2 {
+            flex-grow: 3;
+            margin-left: 20px;
+            margin-right: 20px;
+            background: orange;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item2 button {
+            background: whitesmoke;
+            color: black;
+            height: 30px;
+            width: 70px;
+            margin: 10px;
+        }
+
+        .item2 div {
+            background: whitesmoke;
+            color: black;
+            font-size: 20px;
+            padding: 5px;
+            width: 500px;
+            margin: 10px;
+            text-align: center;
+            border: 2px solid grey;
+
+        }
+
+        .item2 p {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .item2 {
+                flex-grow: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <header> Flex Box Task</header>
+        <div class="flex-box1">
+            <div class="new-item">
+                <h2>pirmas paragrafas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="new-item item2">
+                <button>Button1</button>
+                <button>Button2</button>
+                <button>Button3</button>
+                <button>Button4</button>
+                <div>Here is a special offer</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="new-item">
+                <h2>trecias paragrafas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
